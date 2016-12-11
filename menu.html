@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial Site w/ Bootstrap - Menu Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Port+Lligat+Slab|Rum+Raisin" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row topHeader">
+        <div class="col-sm-2">
+            <a href="index.html"><button type="button" class="btn-lg btn-default hdr-btn">
+                <span class="glyphicon glyphicon-home"></span> HOME</button></a>
+        </div>
+        <div class="col-sm-8">
+            <h1>Plan that Party!</h1>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Pre-Planning <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="getStarted.html#date">Date and Time</a></li>
+                        <li><a href="getStarted.html#budget">Budget</a></li>
+                        <li><a href="getStarted.html#activities">Activities / Entertainment</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Menu</button>
+                </div>
+                <div class="btn-group">
+                    <a href="invitations.html">
+                        <button type="button" class="btn btn-primary">Invitations</button>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Supplies <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="supplies.html#large-items">Large (Tables, Coolers, etc)</a></li>
+                        <li><a href="supplies.html#small-items">Small (Paper Goods)</a></li>
+                        <li><a href="supplies.html#decorations">Decorations</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="details.html">
+                        <button type="button" class="btn btn-primary">Last-minute Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <ul class="pagination">
+                <li><a href="getStarted.html">1</a></li>
+                <li><a href="menu.html">2</a></li>
+                <li><a href="invitations.html">3</a></li>
+                <li><a href="supplies.html">4</a></li>
+                <li><a href="details.html">5</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-10 main-content">
+            <div class="sub-hdr">
+                <h4>Step 2: Menu</h4>
+                <div>&nbsp; </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h5><a data-toggle="collapse" href="#foodPanel">Food<span class="caret"></span></a></h5>
+                            <div id="foodPanel" class="panel-collapse collapse">
+                                <ul>
+                                    <li>Are guests contributing menu items? <br> Potluck? or Assignments?</li>
+                                    <li>Write down and save menu in a safe place!</li>
+                                    <li>Budget (Cater, Make yourself, Combination)</li>
+                                    <li>Effort involved (again Cater, Make yourself, Combination)</li>
+                                    <li>Schedule extra time to grocery shop.</li>
+                                </ul>
+                                <p>To consider:</p>
+                                <ul>
+                                    <li>Is a meal being served?</li>
+                                    <li>Appetizers, snacks (often overlooked).</li>
+                                    <li>What serving dishes do you have?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div id="menuCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/shish-kebab.png" alt="a grill containing dozens of colorful shish-kebob skewers">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/cupcakes.png" alt="birthday cupcakes with a single lit candle each.">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/grill.png" alt="smoky grill with food sizzling on it!">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/birthday.png" alt="round birthday cake with Happy Birthday letter candles lit.">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/popcorn.png" alt="individual size container of popcorn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body" data-toggle="tooltip" data-placement="top"
+                             title="CAREFULLY consider whether alcohol should be included in your party beverage offerings!">
+                            <h5><a data-toggle="collapse"  href="#drinkPanel">Beverages<span class="caret"></span></a></h5>
+                            <div id="drinkPanel" class="panel-collapse collapse">
+                                <ul>
+                                    <li>This is the item that most guests will contribute (and usually alcohol -
+                                        assuming an adult party).</li>
+                                    <li>However, you will still need to have plenty of beverages on hand.</li>
+                                    <ul>
+                                        <li>Water (bottled, pitcher, dispenser) should be readily available.</li>
+                                        <li>A bowl of punch is a great idea and can easily be themed.</li>
+                                        <li>Soft drinks - soda, juice, lemonade, gatorade.</li>
+                                        <li>Alcoholic beverages - beer, wine & mixed drinks.</li>
+                                    </ul>
+                                </ul>
+                                <p>To consider:</p>
+                                <ul>
+                                    <li>Have someone serve as or hire a bartender?</li>
+                                    <li>Have guests bring their own?</li>
+                                    <li>If at a venue, it's ok to have a cash bar OR a partially open bar for beer,
+                                        wine, soda - cash for everything else.</li>
+                                    <li>At home, make sure alcohol is separate from other drinks - especially
+                                        if kids / teens will be present.</li>
+                                    <li>What's the weather like? Guests will drink more (and eat less) on very warm days.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <div id="drinkCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/coca-cola.png" alt="soda cans, specifically coca-cola.">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/cocktails.png" alt="a waiter holding a tray of fancy drinks">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/tea.png" alt="Hot beverage in steaming cup, tea or coffee.">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/sunBeer.png" alt="Two men clinking rootbeer bottles together with sun
+                                        setting in background">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/weddingDrink.png" alt="Bride holding champagne flute">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-1">
+            <ul class="pager">
+                <li><a href="getStarted.html">&larr;</a></li>
+                <li><a href="invitations.html">&rarr;</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="well well-sm row footer">
+        <div class="col-sm-4">
+            Janet Weber <br>
+            Fall 2016
+        </div>
+        <div class="col-sm-4 c-footer">
+            <br>
+            Images courtesy of <a href="https://pixabay.com/">Pixabay</a>
+        </div>
+        <div class="col-sm-4 r-footer">
+            WEB-115 <br>
+            HTML & CSS
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

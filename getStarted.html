@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial Site w/ Bootstrap - Getting Started Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Port+Lligat+Slab|Rum+Raisin" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row topHeader">
+        <div class="col-sm-2">
+            <a href="index.html"><button type="button" class="btn-lg btn-default hdr-btn">
+                <span class="glyphicon glyphicon-home"></span> HOME</button></a>
+        </div>
+        <div class="col-sm-8">
+            <h1>Plan that Party!</h1>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Pre-Planning <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#date">Date and Time</a></li>
+                        <li><a href="#budget">Budget</a></li>
+                        <li><a href="#activities">Activities / Entertainment</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="menu.html">
+                        <button type="button" class="btn btn-primary">Menu</button>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="invitations.html">
+                        <button type="button" class="btn btn-primary">Invitations</button>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Supplies <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="supplies.html#large-items">Large (Tables, Coolers, etc)</a></li>
+                        <li><a href="supplies.html#small-items">Small (Paper Goods)</a></li>
+                        <li><a href="supplies.html#decorations">Decorations</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="details.html">
+                        <button type="button" class="btn btn-primary">Last-minute Details</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1">
+            <ul class="pagination">
+                <li><a href="getStarted.html">1</a></li>
+                <li><a href="menu.html">2</a></li>
+                <li><a href="invitations.html">3</a></li>
+                <li><a href="supplies.html">4</a></li>
+                <li><a href="details.html">5</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-10 main-content">
+            <div class="sub-hdr">
+                <h4>Step 1: Pre-Planning</h4>
+                <div>&nbsp; </div>
+            </div>
+            <div class="row" id="date">
+                <div class="col-sm-4 ">
+                    <img src="images/calendar.png" alt="month calendar with date circleded." class="col-img img-rounded">
+                </div>
+                <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h5>Choose the Date and Time</h5>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">2017 Calendar</button>
+                                    <!-- Modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="images/calendar-year.png" alt="2017 Year Calendar 4x3.">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>To consider:</p>
+                            <ul>
+                                <li>Is party related to a specific event tied to the calendar?
+                                Birthday, Sporting Event (i.e. Super Bowl, or Memorial Day</li>
+                                <li>How much planning time is required?</li>
+                                <li>Are certain people required to be there? Check their schedules.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" id="budget">
+                <div class="col-sm-4">
+                    <img src="images/plastic-card.png" alt="credit card image" class="col-img img-rounded">
+                </div>
+                <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h5>What is the budget?</h5>
+                            <ul>
+                                <li>Is the event large enough to warrant budget consideration?</li>
+                                <li>A little effort here can save a lot of disappointment!</li>
+                                <li>For most events, a detailed budget is not necessary.</li>
+                            </ul>
+                            <div class="alert alert-danger">
+                               <strong>Danger!</strong> Skipping this step will most likely have negative consequences!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" id="activities">
+                <div class="col-sm-4">
+                    <img src="images/dj.png" class="col-img img-rounded" alt="">
+                    <img src="images/clowns.png"  class="col-img img-rounded" alt="">
+                    <img src="images/magic.png"  class="col-img img-rounded" alt="">
+                    <img src="images/twister.png" class="col-img img-rounded" alt="">
+                    <img src="images/pingpong.png" class="col-img img-rounded"alt="">
+                </div>
+                <div class="col-sm-8">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h5>Entertainment / Activities</h5>
+                            <p>Consider what activities or entertainment (if any) might be a part of your event.
+                                Make note of any reservations / supplies required.</p>
+                            <ul>
+                                <li>Band or DJ?</li>
+                                <li>Kids' Party Entertainment</li>
+                                <ul>
+                                    <li>magician</li>
+                                    <li>clown</li>
+                                    <li>comedian</li>
+                                    <li>bowling</li>
+                                    <li>roller skating</li>
+                                    <li>mini-golf</li>
+                                    <li>trampoline jumping</li>
+                                    <li>craft activity</li>
+                                    <li>movie theater</li>
+                                </ul>
+                                <li>Outside Activities</li>
+                                <ul>
+                                    <li>Baggo (Corn Hole)</li>
+                                    <li>Water Balloons</li>
+                                    <li>Slip n Slide</li>
+                                    <li>Volley Ball</li>
+                                    <li>Swimming Pool</li>
+                                    <li>Dancing</li>
+                                </ul>
+                                <li>Organized games</li>
+                                <ul>
+                                    <li>indoor/outdoor</li>
+                                    <li>competitions - relay races, egg / balloon toss, ping pong</li>
+                                    <li>team activies: yard games (horse shoes, jarts, baggo, etc.) or
+                                        softball, volleyball, etc.</li>
+                                </ul>
+                            </ul>
+                            <img src="images/slide.png" style="width: 32%; float:left" class="col-img img-rounded"
+                                 alt="">
+                            <img src="images/waterBalloons.png" style="width: 32%; float:left; margin-left: .5em"
+                                 class="col-img img-circle" alt="">
+                            <img src="images/baggo.png" style="width: 32%; margin-left: .5em" class="col-img img-rounded"
+                                 alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-1">
+           <ul class="pager">
+               <li><a href="index.html">&larr;</a></li>
+               <li><a href="menu.html">&rarr;</a></li>
+           </ul>
+        </div>
+    </div>
+
+    <div class="well well-sm row footer">
+        <div class="col-sm-4">
+            Janet Weber <br>
+            Fall 2016
+        </div>
+        <div class="col-sm-4 c-footer">
+            <br>
+            Images courtesy of <a href="https://pixabay.com/">Pixabay</a>
+        </div>
+        <div class="col-sm-4 r-footer">
+            WEB-115 <br>
+            HTML & CSS
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
